@@ -1,0 +1,73 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2c2c;
+}
+
+.image-centre {
+    height: 250px;
+}
+
+.left h3 {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+}
+
+.image-centre:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    
+}
+
+.upgrade-image {
+    width: 55px;
+}
+
+.diamond-img {
+    width: 55px;
+}
+
+.upgrade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    gap: 30px;
+    padding: 0 10px;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+.cost-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.diamond-img {
+    width: 25px;
+    height: 25px;
+}
+
+.next-level-info {
+    position: absolute;
+    right: -160px;
+    background-color: grey;
+    height: 80px;
+    width: 100px;
+    display: none;
+}
+
+.upgrade:hover .next-level-info {
+    display: block;
+}
+
