@@ -4,8 +4,20 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #2c2c2c;
+    background-color: #d7c2c2;
     position: relative;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b84616;
+    text-shadow: 2px 2px 4px #ede8e8;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fade-in 1s;
 }
 
 .image-centre {
@@ -40,11 +52,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid white;
+    border: 5px solid rgb(79, 6, 6);
     gap: 30px;
     padding: 0 10px;
     position: relative;
     margin-bottom: 20px;
+    border-radius: 5px;
     
 }
 
@@ -74,13 +87,15 @@ body {
 .statistics {
 position: absolute;
 bottom: 0;
-width: 450px;
+width: 400px;
+height: 50px;
 padding: 30px;
-border: 2px white solid;
+border: 3px white solid;
 border-top-right-radius: 10px;
 border-top-left-radius: 10px;
 right:50%;
 transform: translate(10%);
+margin-bottom: 10px;
 }
 
 .texts{
