@@ -155,4 +155,3 @@ function buyClick() {
     }
 }
 
-// Repeat the save() call in buyPickaxe and buyMiner functions as well
