@@ -12,9 +12,11 @@
     <section>
         <div class="main">
             <div class="left">
-                <h3>Diamant:<span class="diamondCost">1000</span></h3>
+                <h3>Diamant:<span class="diamondCost">0</span></h3>
+                <div class="diamond-img-container">
                 <img src="./Assets/vecteezy_diamond-cartoon-icon_10966305-removebg-preview.png" draggable="false" alt=""
                     onclick="incrementDiamond()" class="image-centre">
+                </div>
             </div>
             <div class="right">
                 <div class="upgrade" onclick="buyClick()">
@@ -34,7 +36,7 @@
                         </div>
                     </div>
                     <div class="right-section">
-                        <p>Level <span class="clicker-level">0</span></p>
+                        <p>Level <span class="clicker-level">1000</span></p>
                     </div>
                     <div class="next-level-info">
                         <p>
@@ -44,8 +46,7 @@
                 </div>
                 <div class="upgrade" onclick="buyPickaxe()">
                     <div class="left-section">
-                        <img src="./Assets/pickaxe.png" alt=""
-                            class="upgrade-image">
+                        <img src="./Assets/pickaxe.png" alt="" class="upgrade-image">
                     </div>
                     <div class="mid-section">
                         <h4>
@@ -67,7 +68,39 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="upgrade" onclick="buyMiner()">
+                    <div class="left-section">
+                        <img src="../DIAMANT CLICKER/assets/miner-removebg-preview.png" alt="" class="upgrade-image">
+                    </div>
+                    <div class="mid-section">
+                        <h4>
+                          Miner
+                        </h4>
+                        <div class="cost-info">
+                            <p>
+                                Cost: <span class="minerCost">250</span>
+                            </p>
+                            <img src="./Assets/vecteezy_diamond-cartoon-icon_10966305-removebg-preview.png" alt="" class="diamond-img">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <p>Level <span class="miner-level">0</span></p>
+                    </div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="miner-increase">12 </span>diamond per click
+                        </p>
+                    </div>
+                </div>
+
                 
+            </div>
+        </div>
+        <div class="statistics">
+            <div class="texts">
+            <p>GPC: <span id="gpc-text">1</span></p>
+            <p>GPS: <span id="gps-text">0</span></p>
             </div>
         </div>
     </section>

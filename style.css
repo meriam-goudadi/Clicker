@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #2c2c2c;
+    position: relative;
 }
 
 .image-centre {
@@ -70,4 +71,40 @@ body {
 .upgrade:hover .next-level-info {
     display: block;
 }
+.statistics {
+position: absolute;
+bottom: 0;
+width: 450px;
+padding: 30px;
+border: 2px white solid;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+right:50%;
+transform: translate(10%);
+}
 
+.texts{
+display: flex;
+gap:100px;
+justify-content: center;
+font-weight: bold;
+font-size: 20px;
+}
+.fade-up{
+animation: fade-up 1s;
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.diamond-img-container {
+    position:relative;
+ 
+}
