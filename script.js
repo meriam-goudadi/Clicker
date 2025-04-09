@@ -19,6 +19,7 @@ let parsedClickerIncrease = parseFloat(clickerIncrease.innerHTML)
  
 
 let dpc = 1
+let dps = 0
 
 // fonction incrémental quand on click cela ajout un nombre au compteur
 
@@ -59,14 +60,17 @@ function buyPickaxe() {
 
     pickaxeLevel.innerHTML ++
 
-    parsedPickaxeIncrease = parseFloat((parsedPickaxeIncrease * 1.03).toFixed(2))
+    parsedPickaxeIncrease = parseFloat((parsedPickaxeIncrease * 1.40).toFixed(2))
     pickaxeIncrease.innerHTML = parsedPickaxeIncrease 
-    dpc += parsedPickaxeIncrease
+    dps += parsedPickaxeIncrease
 
-    parsedPickaxeCost *= 1.18
+    parsedPickaxeCost *= 1.48
     pickaxeCost.innerHTML = Math.round(parsedPickaxeCost)
     }
 
-
-    
 }
+// fonction pour permettre au pioche de miner sans clicker
+setInterval(() => {
+    parsedDiamond += dps
+    diamond.innerHTML = Math.round(parsedDiamond)
+}, 100)
