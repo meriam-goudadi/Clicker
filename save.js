@@ -1,3 +1,16 @@
+function save() {
+    localStorage.setItem('diamondGameState', JSON.stringify({
+        diamond: parsedDiamond,
+        clickerCost: parsedClickerCost,
+        clickerLevel: parseInt(clickerLevel.innerHTML),
+        pickaxeCost: parsedPickaxeCost,
+        pickaxeLevel: parseInt(pickaxeLevel.innerHTML),
+        minerCost: parsedMinerCost,
+        minerLevel: parseInt(minerLevel.innerHTML),
+        dpc: dpc,
+        gps: gps
+    }));
+}
 function load() {
     const savedState = localStorage.getItem('diamondGameState');
     if (savedState) {

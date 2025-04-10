@@ -1,0 +1,64 @@
+{
+    "diamond": 70000,
+    "clickerCost": 10,
+    "clickerLevel": 0,
+    "clickerIncrease": 1,
+    "pickaxeCost": 130,
+    "pickaxeLevel": 0,
+    "pickaxeIncrease": 4,
+    "minerCost": 250,
+    "minerLevel": 0,
+    "minerIncrease": 12,
+    "dpc": 1,
+    "dps": 0,
+    "totalDiamondsCollected": 100000,
+    "upgradesPurchased": 10,
+    "lastSaveTime": "2023-10-01T12:00:00Z",
+    "achievements": {
+        "firstClick": true,
+        "firstUpgrade": true,
+        "diamondCollector": false,
+        "masterClicker": false,
+        "pickaxePro": false,
+        "minerMaster": false
+    },
+    "settings": {
+        "soundEnabled": true,
+        "musicEnabled": true,
+        "notificationsEnabled": true,
+        "difficulty": "normal",
+        "theme": "light"
+    },
+    "playerStats": {
+        "playTime": 3600,
+        "clicks": 1500,
+        "upgradesUsed": 10,
+        "highestLevelClicker": 10,
+        "highestLevelPickaxe": 5,
+        "highestLevelMiner": 3
+    },
+    "dailyRewards": {
+        "lastClaimed": "2023-10-01T12:00:00Z",
+        "streak": 5,
+        "rewardDay1": 1000,
+        "rewardDay2": 2000,
+        "rewardDay3": 3000,
+        "rewardDay4": 4000,
+        "rewardDay5": 5000
+    },
+    "events": {
+        "activeEvent1": {
+            "name": "Double Diamonds",
+            "endTime": "2023-10-01T14:00:00Z"
+        },
+        "activeEvent2": {
+            "name": "Lucky Day",
+            "endTime": "2023-10-01T13:00:00Z"
+        },
+        "completedEvent1": {
+            "name": "Weekend Bonus",
+            "reward": 5000,
+            "dateCompleted": "2023-09-30T12:00:00Z"
+        }
+    }
+}
