@@ -5,27 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Diamond_Clicker</title>
 </head>
 
 <body>
     <header>
-        <h1>Diamant Clicker</h1>
+        <h1>Diamond Clicker</h1>
         </header>
-    
+        <audio id="game-music" loop>
+            <source src="./assets/images/funny-bgm-240795.mp3" type="audio/mpeg">
+           
+        </audio>
+        <button id="play-button">Play Music</button>
+        <button id="pause-button">Pause Music</button>
     <section>
         <div class="main">
             <div class="left">
                 <h3>Diamant:<span class="diamondCost">70000</span></h3>
                 <div class="diamond-img-container">
-                <img src="./Assets/vecteezy_diamond-cartoon-icon_10966305-removebg-preview.png" draggable="false" alt=""
-                    onclick="incrementDiamond()" class="image-centre">
+                <img src="./Assets/images/diamond.png" draggable="false" alt=""
+                    onclick="incrementDiamond(event)" class="image-centre">
                 </div>
             </div>
             <div class="right">
                 <div class="upgrade" onclick="buyClick()">
                     <div class="left-section">
-                        <img src="./Assets/istockphoto-977527838-612x612-removebg-preview.png" alt=""
+                        <img src="./Assets/images/istockphoto-977527838-612x612-removebg-preview.png" alt=""
                             class="upgrade-image">
                     </div>
                     <div class="mid-section">
@@ -36,7 +41,7 @@
                             <p>
                                 Cost: <span class="clickerCost">10</span>
                             </p>
-                            <img src="./Assets/vecteezy_diamond-cartoon-icon_10966305-removebg-preview.png" alt="" class="diamond-img">
+                            <img src="./Assets/images/diamond.png" alt="" class="diamond-img">
                         </div>
                     </div>
                     <div class="right-section">
@@ -50,7 +55,7 @@
                 </div>
                 <div class="upgrade" onclick="buyPickaxe()">
                     <div class="left-section">
-                        <img src="./Assets/pickaxe.png" alt="" class="upgrade-image">
+                        <img src="./Assets/images/pickaxe.png" alt="" class="upgrade-image">
                     </div>
                     <div class="mid-section">
                         <h4>
@@ -60,7 +65,7 @@
                             <p>
                                 Cost: <span class="pickaxeCost">130</span>
                             </p>
-                            <img src="./Assets/vecteezy_diamond-cartoon-icon_10966305-removebg-preview.png" alt="" class="diamond-img">
+                            <img src="./Assets/images/diamond.png" alt="" class="diamond-img">
                         </div>
                     </div>
                     <div class="right-section">
@@ -75,7 +80,7 @@
 
                 <div class="upgrade" onclick="buyMiner()">
                     <div class="left-section">
-                        <img src="./assets/mineur1-removebg-preview.png" alt="" class="upgrade-image">
+                        <img src="./assets/images/mineur1-removebg-preview.png" alt="" class="upgrade-image">
                     </div>
                     <div class="mid-section">
                         <h4>
@@ -85,7 +90,7 @@
                             <p>
                                 Cost: <span class="minerCost">250</span>
                             </p>
-                            <img src="./Assets/vecteezy_diamond-cartoon-icon_10966305-removebg-preview.png" alt="" class="diamond-img">
+                            <img src="./Assets/images/diamond.png" alt="" class="diamond-img">
                         </div>
                     </div>
                     <div class="right-section">

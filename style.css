@@ -4,7 +4,12 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #e0ddf3;
+    background-image: url('https://cdn.discordapp.com/attachments/1130986582032050226/1159996486794168320/2023-10-01_16.23.25.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f0f0f0;
     position: relative;
 }
 h1 {
@@ -12,7 +17,7 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #b84616;
-    text-shadow: 2px 2px 4px #ede8e8;
+    text-shadow: 2px 2px 4px #6e6c6c;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     text-transform: uppercase;
@@ -93,9 +98,9 @@ padding: 30px;
 border: 3px white solid;
 border-top-right-radius: 10px;
 border-top-left-radius: 10px;
-right:50%;
+right:57%;
 transform: translate(10%);
-margin-bottom: 10px;
+margin-bottom:5px;
 }
 
 .texts{
@@ -122,4 +127,60 @@ animation: fade-up 1s;
 .diamond-img-container {
     position:relative;
  
+}
+
+button{
+    margin: 3px;
+}
+
+button:hover {
+    background-color: #b574c7; /* Couleur de fond au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+button:active {
+    background-color: #792c7d; /* Couleur de fond lors du clic */
+    transform: scale(0.95); /* Réduction de la taille lors du clic */
+}
+/* le style pour faire apparaitre le chiffre quand on click sur le diamant */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    
+    animation: fade-up 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+.diamond-image-container {
+    position: relative;
+    
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translate(-5px);
+        opacity: 0.8;
+    }
+    40% {
+        transform: translate(-13px);
+        opacity: 0.6;
+    }
+    600% {
+        transform: translate(-25px);
+        opacity: 0.4;
+    }
+    80% {
+        transform: translate(-42px);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translate(-65px);
+        opacity: 0;
+    }
+    
 }
