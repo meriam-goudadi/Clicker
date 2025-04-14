@@ -182,6 +182,25 @@ window.onload = function() {
     load(); // Charger l'état du jeu
     startMusic(); // Démarrer la musique
 };
+// Récupérer l'élément audio pour le son de collecte de diamants
+const diamondSound = document.getElementById("diamond-sound");
+
+// Fonction pour jouer le son de collecte de diamants
+function playDiamondSound() {
+    diamondSound.currentTime = 0; // Rewind to the start
+    diamondSound.play(); // Play the sound
+}
+
+// Modifier votre fonction incrementDiamond pour inclure le son
+function incrementDiamond(event) {
+    diamond.innerHTML = Math.round(parsedDiamond += dpc);
+    
+    // Jouer le son de collecte de diamants
+    playDiamondSound();
+
+    // Afficher la valeur du clic à l'endroit où l'utilisateur a cliqué
+    showClickValue(event.clientX, event.clientY);
+}
 // Save game state to localStorage
 function save() {
     const gameState = {
